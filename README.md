@@ -1,29 +1,27 @@
 # 🎀 Breast Cancer Prediction Studio
 
-An interactive machine learning application that uses Logistic Regression to predict breast cancer classifications from five cell-nucleus measurements, with visual explanations of the model's output.
+An interactive machine learning web application that uses Logistic Regression to classify breast cancer patterns from five cell-nucleus measurements and visualize the model's predictions.
 
 ## 🚀 Live Demo
 
-**[Launch Breast Cancer Prediction Studio](PASTE_YOUR_RENDER_URL_HERE)**
-
-> **Disclaimer:** This project is for educational purposes only. It is not a medical device and must not be used to diagnose or make treatment decisions.
+### [**Launch Breast Cancer Prediction Studio**](https://breast-cancer-detection-am48.onrender.com/)
 
 ## ✨ Features
 
-- **Interactive predictions:** Adjust five input measurements to explore model predictions.
-- **Risk gauge:** Visualize the estimated probability of a malignant classification.
-- **Feature contributions:** Explore how individual measurements influence the model output.
-- **What-if analysis:** Change one measurement at a time and observe prediction changes.
-- **Breast anatomy illustration:** Explore a schematic illustration of breast tissue and a magnified cell nucleus.
-- **Decision map:** Visualize the model's decision boundary for two selected features.
-- **Data distributions:** Compare input measurements with the dataset distributions.
-- **Model explanations:** Review the learned model weights and limitations.
+- **Interactive predictions** using five input measurements.
+- **Risk gauge** displaying the estimated probability of a malignant classification.
+- **Feature contribution analysis** to explore how measurements influence predictions.
+- **What-if analysis** to observe prediction changes when one feature is adjusted.
+- **Schematic breast anatomy visualization** with a magnified cell nucleus.
+- **Decision map** showing the model's decision boundary for two features.
+- **Feature distributions** comparing measurements with the dataset.
+- **Model explanations** displaying learned weights and limitations.
 
-## 🧠 Model
+## 🧠 Machine Learning Model
 
 - Algorithm: Logistic Regression
 - Input features: Mean radius, mean texture, mean perimeter, mean area, and mean smoothness
-- Preprocessing: Feature scaling using the saved scaler
+- Preprocessing: Feature scaling
 - Output: Estimated malignant and benign class probabilities
 
 ## 🛠️ Tech Stack
@@ -34,15 +32,15 @@ An interactive machine learning application that uses Logistic Regression to pre
 - NumPy and pandas
 - Matplotlib and SciPy
 - Joblib
-- Render for deployment
+- Render
 
-## 📁 Project Files
+## 📁 Project Structure
 
-- `app.py` — Gradio application
+- `app.py` — Gradio web application
 - `easy_model.joblib` — Saved scaler and trained model
-- `Breast_cancer_data.csv` — Dataset used for visualizations
+- `Breast_cancer_data.csv` — Dataset for visualizations
 - `requirements.txt` — Python dependencies
 
-## ⚠️ Limitations
+## ⚠️ Disclaimer
 
-This educational demonstration uses five summary features and a Logistic Regression model. Its predictions are not a substitute for clinical assessment, medical imaging, biopsy, or professional medical advice.
+This project is intended for educational and demonstration purposes only. It is not a medical device and must not be used for clinical diagnosis or treatment decisions. Predictions are not a substitute for evaluation by a qualified healthcare professional.
